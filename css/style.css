@@ -1,4 +1,4 @@
-@import url(/css/reset.css);
+@import url("/css/reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 *{
@@ -38,7 +38,352 @@ h6{
     clear: both;
 }
 
+.clear-fix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
 
 
+/* Layouts */
+
+#app-row{
+    /* background-color: aqua; */
+}
+#nav-row{
+    background-color:#231f20;;
+}
+#util-row{
+    background-color: #ffde00;
+}
+
+.container{
+    margin:0 auto;
+    width: 1170px;
+}
+#app-row{
+    height:80px;
+    padding: 10px 0;
+}
+#logo{
+    float: left;
+    height: 60px;
+}
+#app-row>.container>.wrapper{
+    float: right;
+    width: 70%;
+    height: 100%;
+
+}
+#app-row>.container .wrapper .row:nth-child(2){
+    
+    padding-top: 10px;
+    /* background-color: chartreuse; */
+}
+#app-row>.container>.wrapper>.row:first-child{
+    /* background-color: rgb(94, 90, 94); */
+    
+}
+#app-row>.container>.wrapper>.row:last-child{
+    /* background-color:white; */
+    
+}
+#nav-lang{
+    float: right;
+}
+#nav-lang>li{
+    float: left;
+}
+#nav-lang>li>a{
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+
+}
+#nav-lang>li>a:hover{
+    color:#ff9d1e;
+    text-decoration: underline;
+}
+#nav-lang>li:not(#nav-lang>li:last-child){
+    margin-right: 10px;
+}
+
+#main-nav>li{
+    float: left;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#main-nav>li>a{
+    text-decoration: none;
+    color: black;
+}
+#main-nav>li>a:hover{
+    text-decoration: underline;
+}
+#smi-container{
+    float: right;
+}
+#smi-container>ul>li{
+    float: left;
+    margin-right:8px;
+    padding: 5px;
+    /* background-color: #ff9d1e; */
+}
+ion-icon{
+    font-size: 1.5rem;
+}
+.icon-blue{
+    color: blue;
+}
+.icon-light-blue{
+    color: rgb(14, 164, 252);
+}
+.icon-red{
+    color: red;
+}
+#nav-row>.container>nav>li{
+    float: left;
+    
+}
+
+#nav-row>.container>nav>li>a{
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    position:relative;
+    text-decoration: none;
+}
+#nav-row>.container>nav>li>a:hover{
+    background-color: #ff9d1e;
+    color: black;
+}
+#nav-row>.container>nav>li>a:hover::after{
+    display: block;
+    content: "";
+    border-top:6px solid #ff9d1e;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100%;
+    position: absolute;
+    
+}
+
+#util-row>div{
+    text-align: right;
+}
+#util-row>div>a{
+    display: inline-block;
+    height: 40px;
+    margin-left:10px;
+    margin-top: 5px;
+    background-color: #107ece;
+    border: 1px solid rgb(0, 60, 255);
+    border-bottom: 2px solid #0f027b;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+
+}
+#util-row>div>a:hover{
+    background-color: #0865a9;
+    color: #fff;
+}
+
+footer .row{
+
+    background-color: red;
+}
+footer .copy-right{
+    background-color: #ffde00;
+    padding: 16px 0;
+    color: #515254;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer .col{
+    float: left;
+    width: 25%;
+}
+footer .row{
+
+    height: 225px;
+    background-color: #808285;
+}
+footer .col h3{
+    line-height: 3rem;
+    font-size:1rem
+}
+footer .col nav>li>a{
+    line-height: 1.8rem;
+}
+footer nav li>a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .row .col nav li a:hover{
+    color: #ff9d1e;
+}
+footer .col:last-of-type {
+    background-color: #515254;
+    height: 225px;
+    position: relative;
+}
+footer>.row{
+    position: relative;
+}
+
+footer>.row::after{
+    display: block;
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: #515254;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* display: block;
+    content: "";
+    background-color: #515254;
+    position: absolute;
+    width: 25%;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+
+}
 
 
+footer>.row>.container>div>.col:last-of-type>p,footer>.row>.container>div>.col:last-of-type>h3{
+    position: relative;
+    padding-left: 15px;
+    line-height: 1.25rem;
+    z-index: 10;
+}
+footer>.row>.container>div>.col:last-of-type>h3{
+    padding-top: 15px;
+}
+footer>.row>.container>div>.col:last-of-type>p{
+    font-size: 13px;
+    margin-top: 5px;
+    color: white;
+}
+
+footer h3{
+    margin-top: 5px;
+}
+
+
+main>.container{
+    height: 90px;
+    /* background-color: #0f027b; */
+}
+main>div.container>div.col-1{
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+main>div.container>div.col-2{
+    width: 25%;
+    height: 100%;;
+    float: right;
+}
+main>.container>.col-1>ul>li{
+    width: 20%;
+    float: left;
+}
+main>.container>.col-1>ul>li{
+    text-align: right;
+}
+main>.container>.col-1>ul>li>a{
+    display: inline-block;
+    text-decoration: none;
+}
+main>.container>.col-1>ul>li span{
+    display: block;
+    text-align: center;
+}
+main>.container>.col-1>ul>li>h4{
+    size: 18px;
+    width: fit-content;
+    line-height: 3.5rem;
+}
+
+main>.container>.col-1>ul>li>a>span{
+    font-size: 0.8rem;
+}
+main>.container>.col-1>ul>li:hover>a>span{
+    color: #ff9d1e;
+}
+main>.container>.col-1>ul>li>a>img{
+    border: 2px solid transparent;
+}
+main>.container>.col-1>ul>li:hover>a>img{
+    border-color: #ff9d1e;
+}
+
+
+#chat{
+    position: fixed;
+    top:50%;
+    right:0;
+    background-color:#1f1f1f;
+    width: 125px;
+    height: 70px;
+    transform: translateX(38.5%) rotate(270deg);
+    border-radius: 6.4px;
+}
+#chat:hover{
+    right:5px;
+}
+/* #bubble-wrapper{
+    display: block;
+}
+#chat>div>a{
+    display: block;
+} */
+#chat>div{
+    position: relative;
+    top:55%;
+    left: 10%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+#chat>div>a>span:last-of-type{
+    width: 100px;
+    color:white;
+    line-height: 1rem;
+    vertical-align: top;
+}
+#bubble-wrapper>ion-icon{
+    border-radius: 100%;
+    color: black;
+    padding: 2px;
+    animation-name: wave;
+    animation-duration: 800ms;
+    animation-iteration-count:infinite;
+    position: relative;
+    background-color: #ffdd0048;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes wave{
+    from{
+        border:2px solid #ffdd0048;
+    }
+    to{
+        border:20px solid #ffdd0048;
+    }
+}
+#chat-now{
+    position:absolute;
+    left: 70%;
+    top:30%;
+    font-weight: bold;
+}
