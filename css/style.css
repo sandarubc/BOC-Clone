@@ -80,14 +80,7 @@ h6{
     padding-top: 10px;
     /* background-color: chartreuse; */
 }
-#app-row>.container>.wrapper>.row:first-child{
-    /* background-color: rgb(94, 90, 94); */
-    
-}
-#app-row>.container>.wrapper>.row:last-child{
-    /* background-color:white; */
-    
-}
+
 #nav-lang{
     float: right;
 }
@@ -278,17 +271,21 @@ footer h3{
 }
 
 
+/* main>.container{
+
+    white-space: nowrap;
+} */
 main>.container:first-of-type{
     height: 90px;
     padding-bottom: 110px;
     /* background-color: #0f027b; */
 }
-main>div.container>div.col-1{
+main>.container>.col-1{
     width: 75%;
     height: 100%;
     float: left;
 }
-main>div.container>div.col-2{
+main>.container>.col-2{
     width: 25%;
     height: 100%;;
     float: right;
@@ -415,6 +412,7 @@ main>.container:nth-of-type(2){
 #features>li{
     display: table;
     width: 100%;
+    transition: background-color 500ms;
     
 }
 #features>li:hover{
@@ -450,7 +448,74 @@ main>.container:nth-of-type(2){
 }
 
 #scroll{
+    height: 388px;
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slide{
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 388px;
+    scroll-snap-align: center;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    
+    
+}
+#slide-1{
+    background-image: url(/image/200Day_investment-2022-Sept-Web.jpg);
+}
+#slide-2{
+    background-image: url(/image/green-loan-2022.jpeg);
+}
+#slide-3{
+    background-image: url(/image/Oct1st-2022.jpg);
+}
+#slide-4{
+    background-image: url(/image/Pita-pita_season-3-2022-E.jpg);
+}
+#slide-5{
+    background-image: url(/image/power-branch-close-2022-En-1.jpg);
+}
+#slide-6{
+    background-image: url(/image/Top1000_2022-En_1.jpg);
+}
+.prev, .next{
+    position: absolute;
+    width: 150px;
+    display: inline-block;
+}
+.prev{
     height: 100%;
-    background-color:red;
+    left:0;
+}
+.next{
+    height: 100%;
+    right:0;
+}
+.next>ion-icon, .prev>ion-icon{
+    position: absolute;
+    top: 50%;
+    padding: 5px;
+    background-color: #333;
+    color: #ccc;
+    border-radius: 100%;
+}
+.prev>ion-icon{
+    left: 0;
+    transform: translate(50%, -50%);
+}
+.next>ion-icon{
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.min-col{
+    width: 25%;
     float: left;
 }
