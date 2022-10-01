@@ -519,3 +519,58 @@ main>.container:nth-of-type(2){
     width: 25%;
     float: left;
 }
+
+main>.container:nth-of-type(3)>.min-col>div{
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+}
+main>.container:nth-of-type(3)>.min-col>div>div{
+    width: 270px;
+    height: 180px;
+    overflow: hidden;
+    
+    
+}
+
+main>.container:nth-of-type(3)>.min-col>div>div>img{
+    width: 270px;
+    height: 180px;
+    transition: transform 500ms;
+    
+    
+}
+
+main>.container:nth-of-type(3)>.min-col>div:hover>div>img{
+    transform: scale(1.2);
+}
+main>.container:nth-of-type(3)>.min-col>div>div:first-of-type{
+    display: inline;
+}
+main>.container:nth-of-type(3)>.min-col>div:hover>div:first-of-type{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 270px;
+    height: 180px;
+    background-color: rgba(73, 71, 71, 0.281);
+    opacity: 1;
+    z-index: 1;
+}
+
+main>.container:nth-of-type(3)>.min-col>div>div:last-of-type{
+    width: 270px;
+    background: #525252;
+    color: #fff;
+    height: 40px;
+}
+
+main>.container:nth-of-type(3)>.min-col>div>div>h4{
+    padding: 0.5rem;
+
+}
+main>.container:nth-of-type(3)>.min-col>div>div:last-of-type:hover{
+    background-color: #ffde00;
+    color: #1f1f1f;
+}
