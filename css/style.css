@@ -480,7 +480,7 @@ main>.container:nth-of-type(2){
     background-image: url('/image/power-branch-close-2022-En-1.jpg');
 }
 #slide-6{
-    background-image: url("/image/Top1000_2022-En_1.jpg");
+    background-image: url('https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg');
 }
 .prev, .next{
     position: absolute;
