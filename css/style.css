@@ -574,3 +574,38 @@ main>.container:nth-of-type(3)>.min-col>div>div:last-of-type:hover{
     background-color: #ffde00;
     color: #1f1f1f;
 }
+#find-us{
+    padding-top: 20px;
+    width: 100%;
+    white-space: nowrap;
+}
+#call-us{
+    width: 25%;
+    display: inline-block;
+}
+#covid-relief{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+#locater{
+    width: 25%;
+    display: inline-block;
+    white-space: normal;
+}
+#locater>div{
+    padding-right: 20px;
+}
+#call-us{
+    padding: 10px 0;
+
+}
+#find-us>div:not(div:nth-of-type(2)){
+    text-align: right;
+}
+#call-us>div>ion-icon{
+    color: #515254;
+}
+#call-us>div{
+    padding-right: 10px;
+}
