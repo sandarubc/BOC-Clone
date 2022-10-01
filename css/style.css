@@ -47,9 +47,7 @@ h6{
 
 /* Layouts */
 
-#app-row{
-    /* background-color: aqua; */
-}
+
 #nav-row{
     background-color:#231f20;;
 }
@@ -78,7 +76,6 @@ h6{
 #app-row>.container .wrapper .row:nth-child(2){
     
     padding-top: 10px;
-    /* background-color: chartreuse; */
 }
 
 #nav-lang{
