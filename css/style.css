@@ -468,10 +468,10 @@ main>.container:nth-of-type(2){
     background-image: url(/image/200Day_investment-2022-Sept-Web.jpg);
 }
 #slide-2{
-    background-image: url(/image/green-loan-2022.jpeg);
+    background-image: url(image/green-loan-2022.jpeg);
 }
 #slide-3{
-    background-image: url(/image/Oct1st-2022.jpg);
+    background-image: url("/image/Oct1st-2022.jpg");
 }
 #slide-4{
     background-image: url('/image/Pita-pita_season-3-2022-E.jpg');
