@@ -465,22 +465,22 @@ main>.container:nth-of-type(2){
     
 }
 #slide-1{
-    background-image: url('image/200Day_investment-2022-Sept-Web.jpg');
+    background-image: url(/image/200Day_investment-2022-Sept-Web.jpg);
 }
 #slide-2{
-    background-image: url(image/green-loan-2022.jpeg);
+    background-image: url(/image/green-loan-2022.jpeg);
 }
 #slide-3{
-    background-image: url(image/Oct1st-2022.jpg);
+    background-image: url(/image/Oct1st-2022.jpg);
 }
 #slide-4{
-    background-image: url(image/Pita-pita_season-3-2022-E.jpg);
+    background-image: url('/image/Pita-pita_season-3-2022-E.jpg');
 }
 #slide-5{
-    background-image: url(image/power-branch-close-2022-En-1.jpg);
+    background-image: url('/image/power-branch-close-2022-En-1.jpg');
 }
 #slide-6{
-    background-image: url(image/Top1000_2022-En_1.jpg);
+    background-image: url("/image/Top1000_2022-En_1.jpg");
 }
 .prev, .next{
     position: absolute;
