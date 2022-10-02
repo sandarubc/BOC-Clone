@@ -16,3 +16,8 @@ It include animations Scrolls. They had used JavaScript to get required function
 
 
 - Open 'index.html' in you preffered browser.
+
+## Contact
+Sandaru Akalanka - [@ Linkedin](https://www.linkedin.com/in/sandaru-akalanka-464776188/)
+
+Project Deployment - [BOC Website Clone](https://sandarubc.github.io/BOC-Clone/)
