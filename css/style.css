@@ -465,7 +465,8 @@ main>.container:nth-of-type(2){
     
 }
 #slide-1{
-    background-image: url("https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg");
+    background-image: url(../image/200Day_investment-2022-Sept-Web.jp);
+    /* https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg */
 }
 #slide-2{
     background-image: url("https://boc.lk/image/data/Banner/green-loan-2022.jpeg");
